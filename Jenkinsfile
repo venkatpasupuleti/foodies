@@ -2,12 +2,12 @@ pipeline {
     agent any
     stages {
         stage('checkout scm'){
-            step{
+            steps {
                 echo "pulling code from git repo"
             }
         }
         stage('checkout scm'){
-            step{
+            steps {
                 echo "building project using mvn"
             }
         }
